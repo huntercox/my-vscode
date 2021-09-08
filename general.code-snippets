@@ -1,0 +1,83 @@
+{
+  // General Snippets
+  "PHP tags": {
+    "scope": "php, html",
+    "prefix": "php",
+    "body": [
+      "<?php $0 ?>"
+    ],
+    "description": "Open PHP tags."
+  },
+  "PHP echo": {
+    "scope": "php",
+    "prefix": "echo",
+    "body": [
+      "echo '$0';"
+    ],
+    "description": "Open PHP tags."
+  },
+  "HTML ending-comment": {
+    "scope": "php, html",
+    "prefix": "end",
+    "body": [
+      "<!-- /.$0 -->"
+    ],
+    "description": "HTML end comment"
+  },
+  "Media Query": {
+    "scope": "css, scss",
+    "prefix": "mq",
+    "body": [
+      "@media (min-width: $1) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "media query shortcuts"
+  },
+  "jQuery Wrapper Function": {
+    "scope": "javascript",
+    "prefix": "jq",
+    "body": [
+      "(function($) {",
+      "\t$0",
+      "})(jQuery);"
+    ],
+    "description": "anonymous wrapper function for jquery"
+  },
+  "Default Gulpfile": {
+    "scope": "javascript",
+    "prefix": "gulp",
+    "body": [
+      "const gulp = require('gulp');",
+      "const sass = require('gulp-sass');",
+      "const browserSync = require('browser-sync').create();",
+      "\t",
+      "function styles() {",
+      "\treturn gulp.src('./sass/**/*.scss')",
+      "\t\t.pipe(sass())",
+      "\t\t.pipe(gulp.dest('./'))",
+      "\t\t.pipe(browserSync.stream())",
+      "}",
+      "\t",
+      "function watch() {",
+      "\tbrowserSync.init({",
+      "\t\tnotify: false,",
+      "\t\tproxy: {",
+      "\t\t\ttarget: \"https://$mamp_host\",",
+      "\t\t},",
+      "\t\thttps: {",
+      "\t\t\tkey: \"/Applications/MAMP/Library/OpenSSL/certs/$mamp_host.key\",",
+      "\t\t\tcert: \"/Applications/MAMP/Library/OpenSSL/certs/$mamp_host.crt\"",
+      "\t\t},",
+      "\t});",
+      "\tgulp.watch('./sass/**/*.scss', styles);",
+      "\t// gulp.watch('./*.php').on('change', browserSync.reload);",
+      "\t// gulp.watch('./js/**/*.js').on('change', browserSync.reload);",
+      "}",
+      "\t",
+      "exports.styles = styles;",
+      "exports.watch = watch;",
+    ],
+    "description": "My basic Gulpfile."
+  },
+}
