@@ -1,0 +1,134 @@
+{
+  // Theme Setup.
+  "workbench.colorTheme": "Shades of Purple",
+  "workbench.iconTheme": "file-icons",
+  "editor.fontFamily": "OperatorMonoLig-Book, Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "'OperatorMonoLig-Book', 'Inconsolata for Powerline', monospace",
+  "editor.fontSize": 17,
+  "editor.lineHeight": 24.65,
+  "editor.letterSpacing": 0.5,
+  "editor.fontWeight": "400",
+  "editor.fontLigatures": true,
+  "editor.cursorWidth": 2,
+  "editor.snippetSuggestions": "top",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.enablePreview": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  // Formatting Optional.
+  "editor.formatOnSave": true,
+  "prettier.eslintIntegration": true,
+  "eslint.run": "onType",
+  "eslint.autoFixOnSave": true,
+  // MacOS Only Settings.
+  "terminal.integrated.macOptionIsMeta": true,
+  "workbench.statusBar.feedback.visible": false,
+  // SOP's highlight matching tag setting.
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "full": {
+        "underline": "rgba(251, 148, 255, 1)",
+        "highlight": "rgba(165, 255, 144, 0.15)"
+      },
+      "left": {
+        "highlight": "rgba(165, 255, 144, 0.25)"
+      },
+      "right": {
+        "highlight": "rgba(165, 255, 144, 0.25)"
+      }
+    },
+    "closing": {
+      "full": {
+        "underline": "rgba(251, 148, 255, 1)",
+        "highlight": "rgba(165, 255, 144, 0.25)"
+      },
+      "left": {
+        "highlight": "rgba(165, 255, 144, 0.25)"
+      },
+      "right": {
+        "highlight": "rgba(165, 255, 144, 0.25)"
+      }
+    }
+  },
+  // SOP's Import Cost Extension Settings.
+  "importCost.largePackageColor": "#EC3A37F5",
+  "importCost.mediumPackageColor": "#B362FF",
+  "importCost.smallPackageColor": "#B362FF",
+  "terminal.integrated.cursorBlinking": true,
+  "editor.minimap.enabled": false,
+  "editor.renderIndentGuides": false,
+  "editor.tabSize": 2,
+  "workbench.tree.indent": 10,
+  "editor.highlightActiveIndentGuide": false,
+  "explorer.confirmDelete": false,
+  "workbench.tree.renderIndentGuides": "always",
+  "vetur.ignoreProjectWarning": true,
+  // Reduce width of Line Numbers gutter...
+  "editor.lineDecorationsWidth": 4,
+  "editor.glyphMargin": true,
+  "editor.folding": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "indentRainbow.colors": [
+    "rgba(165, 153, 233,0.07)",
+    "rgba(251, 148, 255, 0.07)",
+    "rgba(255, 238, 128, 0.07)",
+    "rgba(165, 153, 233,0.14)",
+    "rgba(251, 148, 255, 0.14)",
+    "rgba(255, 238, 128, 0.14)",
+  ],
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.wordWrapColumn": 90,
+  "dash.exactDocset": true,
+  "editor.tokenColorCustomizations": {
+    "[Shades of Purple]": {
+      "textMateRules": [
+        {
+          "name": "Add Italics",
+          "scope": [
+            // "modifier",
+            // "this",
+            // "comment",
+            // "storage.modifier.js",
+            // "entity.other.attribute-name.js",
+            // "entity.other.attribute-name.html",
+            // "punctuation.definition.comment",
+            // "text.html.basic entity.other",
+            // "entity.other.attribute-name.tsx",
+            // "entity.other.attribute-name.jsx",
+            // "markup.quote.markdown meta.paragraph.markdown",
+            // "markup.italic.markdown",
+            // "text.jade entity.other.attribute-name.tag",
+            // "keyword.control.from.js",
+            // "entity.other.attribute-name.tag.pug",
+            "entity.name.namespace.js"
+          ],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        }
+      ]
+    },
+  },
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.activityBar.visible": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "searchwpdocs.openResultsInTab": false,
+  "explorer.autoReveal": "focusNoScroll",
+  "workbench.editor.focusRecentEditorAfterClose": false,
+  "emmet.preferences": {
+    "filter.commentAfter": "<!-- /[#ID][.CLASS] -->",
+  },
+  "emmet.syntaxProfiles": {
+    // Enable XHTML dialect for HTML syntax
+    // “html”: “xhtml”
+    "html": {
+      "filters": "html, c"
+    }
+  },
+  "scss.suggestFunctions": false,
+  "scss.suggestMixins": false,
+  "scss.scanImportedFiles": false,
+  "scss.scannerDepth": 5,
+}
